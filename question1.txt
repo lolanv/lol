@@ -1,0 +1,25 @@
+    Create a class TransportVehcile with the following attributes
+            1)_permit which is an instance of permit class(created on the heap)
+            2)_vehicle_type which could be either BUS,CAB,MINI_VAN
+            3)_seat_count which is an positive integer.
+            4)_stops_count which is a positive integer[indicating how many stops vehicle makes between start and end points]
+
+    Create a class Permit with the following attributes
+        1)_permit_number which is a string value
+        2_permit_suration_remaing which is a non-negative integer whcih is the number of month for which Permit is still valid
+
+                    Create special member function as per requirements.
+    Create the following functionalilites in functionalities.cpp file
+        1)Create 4 instances of TransportVehicle on the heap (manged by a shared pointer each).Store instances
+            in a fixed sized container that supports index based access.
+        2)find and display the _permit_number for the instances at index position N on the console where N is passes
+                    as a parameter to the function
+        3)Find and print the average _seat_count for the _vehicle_type passed as the second parameter
+                [Hint : If second argument is BUS,only computer average for BUS type instances]
+        4)Find and print true or false indicating whether all instances have the ame _vehicle_type
+
+    Note:
+        1)Each functionality has to be executed in a spearte std::thread instances (stored and manged by using a 
+                a container of std::thread instances).
+        2)Handle corner cases using std::optional type.
+        3)Use STL algorithms for all data processing operations.

@@ -1,0 +1,15 @@
+ Create a class DataHandler with the following attributes
+        1) An array of 5 integer called _data
+        2) An array of 5 integer called _square_result;
+        3)An array of 5 integer called _factorial_result;
+        4)A boolean data member _flag
+        5)A member function called takeinput that accept 5 integers from the user. If the user enters a number which is not between the 
+            range of 1 to 10 (both included),ask the user to retry. Do not accept value beyond the range.
+        6)A member fucntion ComputeSquare that computes the square of the first 5 "Odd","natural number" that are "divisble by 3"
+        7)A member function ComputeFactorial that computes the factorial of 5 integer in the _data array.
+        8)A member function AverageValue that computes the average value for first 5 primt number[use std::accumulate to compute this value]
+        9) Create special member function as per requirement.Write comments to explain why certain function have been enabled or diabled.
+        10) Note :
+            1)Each member fucntion has to be exceuted in a seperate std::thread instances (stored and manged by using a container of std::thread instances)
+            2)Ensure only one object of DataHandler class can exits in the program at a time.This instances must be created on the heap
+              and manged by a std::unique_ptr instances.
